@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>האלף בית שלי</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🌟 האלף בית שלי 🌟</h1>
+    <p class="subtitle">בואו ללמוד את אותיות האלף בית!</p>
+    <nav class="tabs">
+      <button class="tab active" data-tab="gallery">📚 אותיות</button>
+      <button class="tab" data-tab="quiz">🎯 חידון</button>
+      <button class="tab" data-tab="match">🧩 התאמה</button>
+      <button class="tab" data-tab="write">✏️ כתיבה</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Gallery Tab -->
+    <section id="gallery" class="tab-content active">
+      <div class="section-title">לחץ על אות כדי לשמוע את שמה!</div>
+      <div class="letters-grid" id="lettersGrid"></div>
+    </section>
+
+    <!-- Quiz Tab -->
+    <section id="quiz" class="tab-content">
+      <div class="quiz-container">
+        <div class="score-board">
+          <span>⭐ ניקוד: <strong id="score">0</strong></span>
+          <span>❓ שאלה: <strong id="questionNum">1</strong> / 10</span>
+        </div>
+        <div id="quizQuestion" class="quiz-question"></div>
+        <div id="quizOptions" class="quiz-options"></div>
+        <div id="quizFeedback" class="quiz-feedback hidden"></div>
+        <button id="nextQuizBtn" class="btn-primary hidden">השאלה הבאה ←</button>
+        <div id="quizResult" class="quiz-result hidden"></div>
+      </div>
+    </section>
+
+    <!-- Match Tab -->
+    <section id="match" class="tab-content">
+      <div class="match-container">
+        <div class="match-header">
+          <div class="match-score">זוגות שנמצאו: <strong id="matchScore">0</strong> / <strong id="matchTotal">0</strong></div>
+          <div class="match-moves">מהלכים: <strong id="matchMoves">0</strong></div>
+          <button id="newMatchBtn" class="btn-secondary">משחק חדש 🔄</button>
+        </div>
+        <div id="matchGrid" class="match-grid"></div>
+        <div id="matchWin" class="win-message hidden">
+          🎉 כל הכבוד! מצאת את כל הזוגות! 🎉
+          <br><span id="matchFinalMoves"></span>
+          <button id="matchPlayAgain" class="btn-primary">שחק שוב!</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Write Tab -->
+    <section id="write" class="tab-content">
+      <div class="write-container">
+        <div class="write-header">
+          <div class="write-nav">
+            <button id="writePrev" class="btn-icon">→</button>
+            <div class="write-letter-info">
+              <div id="writeLetter" class="write-display-letter"></div>
+              <div id="writeLetterName" class="write-letter-name"></div>
+            </div>
+            <button id="writeNext" class="btn-icon">←</button>
+          </div>
+          <div class="write-instructions">עקוב אחרי האות בעיפרון!</div>
+        </div>
+        <div class="canvas-wrapper">
+          <canvas id="writeCanvas" width="400" height="300"></canvas>
+          <div class="canvas-overlay" id="writeGuide"></div>
+        </div>
+        <div class="write-controls">
+          <button id="clearCanvas" class="btn-secondary">נקה 🗑️</button>
+          <div class="color-picker">
+            <label>צבע:</label>
+            <input type="color" id="penColor" value="#2563eb">
+          </div>
+          <div class="size-picker">
+            <label>עובי:</label>
+            <input type="range" id="penSize" min="2" max="20" value="8">
+          </div>
+        </div>
+        <div class="word-examples">
+          <div class="word-examples-title">מילים שמתחילות ב<span id="writeLetterNameInline"></span>:</div>
+          <div id="wordsList" class="words-list"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
