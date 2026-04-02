@@ -389,12 +389,12 @@ function clearWriteCanvas() {
 document.getElementById('clearCanvas').addEventListener('click', clearWriteCanvas);
 
 document.getElementById('writePrev').addEventListener('click', () => {
-  writeState.idx = (writeState.idx + 1) % LETTERS.length;
+  writeState.idx = (writeState.idx - 1 + LETTERS.length) % LETTERS.length;
   updateWriteLetter();
 });
 
 document.getElementById('writeNext').addEventListener('click', () => {
-  writeState.idx = (writeState.idx - 1 + LETTERS.length) % LETTERS.length;
+  writeState.idx = (writeState.idx + 1) % LETTERS.length;
   updateWriteLetter();
 });
 
