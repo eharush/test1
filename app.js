@@ -66,7 +66,7 @@ function buildGallery() {
     card.addEventListener('click', () => {
       document.querySelectorAll('.letter-card.playing').forEach(c => c.classList.remove('playing'));
       card.classList.add('playing');
-      speak(letter.display);
+      speak(letter.name);
       setTimeout(() => card.classList.remove('playing'), 1800);
     });
     grid.appendChild(card);
@@ -168,7 +168,7 @@ function answerQuiz(btn, isCorrect, correct, optsEl) {
     btn.classList.add('wrong');
     feedback.textContent = `❌ לא נכון. התשובה הנכונה היא: ${correct.display}`;
     feedback.classList.add('wrong');
-    speak('נסה שוב');
+    speak(correct.name);
   }
 
   if (quizState.question < quizState.total) {
@@ -308,7 +308,7 @@ function updateWriteLetter() {
   ).join('');
 
   clearWriteCanvas();
-  speak(letter.display);
+  speak(letter.name);
 }
 
 function setupCanvas() {
