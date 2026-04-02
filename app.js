@@ -16,7 +16,7 @@ const LETTERS = [
   { char: 'ט', name: 'טֵית',    display: 'טית',   speech: 'טֵית',    words: [{ word: 'טִיל', emoji: '🚀' }, { word: 'טַבַּעַת', emoji: '💍' }, { word: 'טֵלֶפוֹן', emoji: '📞' }] },
   { char: 'י', name: 'יוֹד',    display: 'יוד',   speech: 'יוֹד',    words: [{ word: 'יֶלֶד', emoji: '👦' }, { word: 'יַלְדָּה', emoji: '👧' }, { word: 'יָם', emoji: '🌊' }] },
   { char: 'כ', name: 'כַּף',    display: 'כף',    speech: 'כַּף',    words: [{ word: 'כֶּלֶב', emoji: '🐕' }, { word: 'כּוֹכָב', emoji: '⭐' }, { word: 'כַּדּוּר', emoji: '⚽' }] },
-  { char: 'ל', name: 'לָמֶד',   display: 'למד',   speech: 'לאמד',    words: [{ word: 'לֵב', emoji: '❤️' }, { word: 'לִימוֹן', emoji: '🍋' }, { word: 'לַיִל', emoji: '🌙' }] },
+  { char: 'ל', name: 'לָמֶד',   display: 'למד',   speech: 'לָמֶד',    words: [{ word: 'לֵב', emoji: '❤️' }, { word: 'לִימוֹן', emoji: '🍋' }, { word: 'לַיִל', emoji: '🌙' }] },
   { char: 'מ', name: 'מֵם',     display: 'מם',    speech: 'מֵם',     words: [{ word: 'מְנוֹרָה', emoji: '🕎' }, { word: 'מַיִם', emoji: '💧' }, { word: 'מָנְגּוֹ', emoji: '🥭' }] },
   { char: 'נ', name: 'נוּן',    display: 'נון',   speech: 'נוּן',    words: [{ word: 'נָחָשׁ', emoji: '🐍' }, { word: 'נֵר', emoji: '🕯️' }, { word: 'נָמֵר', emoji: '🐆' }] },
   { char: 'ס', name: 'סָמֶךְ',  display: 'סמך',   speech: 'סאמך',    words: [{ word: 'סוּס', emoji: '🐎' }, { word: 'סִפְרִייָה', emoji: '📚' }, { word: 'סְנוּנִית', emoji: '🐦' }] },
