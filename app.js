@@ -6,9 +6,9 @@
 // get an alternative spelling so TTS reads the letter name, not the word.
 const LETTERS = [
   { char: 'א', name: 'אָלֶף',   display: 'אלף',   speech: 'אָלֶף',   words: [{ word: 'אַרְנָב', emoji: '🐰' }, { word: 'אֲרִי', emoji: '🦁' }, { word: 'אֶצְבַּע', emoji: '☝️' }] },
-  { char: 'ב', name: 'בֵּית',   display: 'בית',   speech: 'ביית',    words: [{ word: 'בַּיִת', emoji: '🏠' }, { word: 'בֵּיצָה', emoji: '🥚' }, { word: 'בָּנָנָה', emoji: '🍌' }] },
+  { char: 'ב', name: 'בֵּית',   display: 'בית',   speech: 'בֵּת',    words: [{ word: 'בַּיִת', emoji: '🏠' }, { word: 'בֵּיצָה', emoji: '🥚' }, { word: 'בָּנָנָה', emoji: '🍌' }] },
   { char: 'ג', name: 'גִּימֶל', display: 'גימל',  speech: 'גִּימֶל', words: [{ word: 'גֶּזֶר', emoji: '🥕' }, { word: 'גְּמַל', emoji: '🐪' }, { word: 'גַּבָּאי', emoji: '👨' }] },
-  { char: 'ד', name: 'דָּלֶת',  display: 'דלת',   speech: 'דאלת',    words: [{ word: 'דָּג', emoji: '🐟' }, { word: 'דּוּב', emoji: '🐻' }, { word: 'דֶּלֶת', emoji: '🚪' }] },
+  { char: 'ד', name: 'דָּלֶת',  display: 'דלת',   speech: 'דָּאלֶת',    words: [{ word: 'דָּג', emoji: '🐟' }, { word: 'דּוּב', emoji: '🐻' }, { word: 'דֶּלֶת', emoji: '🚪' }] },
   { char: 'ה', name: 'הֵא',     display: 'הא',    speech: 'הֵא',     words: [{ word: 'הַר', emoji: '⛰️' }, { word: 'הֶדְיוֹט', emoji: '🤷' }, { word: 'הִיפּוֹ', emoji: '🦛' }] },
   { char: 'ו', name: 'וָו',     display: 'וו',    speech: 'וָו',     words: [{ word: 'וֶרֶד', emoji: '🌹' }, { word: 'וָנִילָה', emoji: '🍦' }, { word: 'וִילוֹן', emoji: '🪟' }] },
   { char: 'ז', name: 'זַיִן',   display: 'זין',   speech: 'זַיִן',   words: [{ word: 'זְבוּב', emoji: '🪰' }, { word: 'זֵיתִים', emoji: '🫒' }, { word: 'זִרָּף', emoji: '🦒' }] },
